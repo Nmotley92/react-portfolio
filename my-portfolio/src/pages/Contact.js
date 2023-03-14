@@ -33,63 +33,68 @@ function Contact() {
   const theme = useTheme();
 
   return (
-    <section>
+    <section
+      style={{
+        backgroundColor: `${theme.palette.primary.main}80`,
+        color: theme.palette.secondary.main,
+        padding: '2rem',
+        borderRadius: '10px',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        width: '50%',
+        margin: 'auto',
+        position: 'absolute',
+        top: '50%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)'
+      }}
+    >
       <h2>Contact Me</h2>
       {!isFormValid && (
         <p style={{ color: theme.palette.error.main }}>Please fill out all input fields.</p>
       )}
-      <div className="contact-form">
-        <form onSubmit={handleSubmit}>
-          <div className="form-group">
-            <label htmlFor="name">Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              value={name}
-              onChange={handleChange}
-              required
-            />
+      <div
+        className="contact-form"
+        style={{
+          backgroundColor: 'transparent',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          marginBottom: '1rem',
+          width: '100%',
+          maxWidth: '500px',
+        }}
+      >
+        <form onSubmit={handleSubmit} style={{ width: '100%',textAlign: 'center' }}>
+          <div className="form-group" style={{ marginBottom: '1rem' }}>
+            <label htmlFor="name" style={{marginRight: '.5rem'}}>Name</label>
+            <input type="text" id="name" name="name" value={name} onChange={handleChange} style={{marginLeft: '.5rem'}} required />
           </div>
-          <div className="form-group">
-            <label htmlFor="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={email}
-              onChange={handleChange}
-              required
-            />
+          <div className="form-group" style={{ marginBottom: '1rem' }}>
+            <label htmlFor="email" style={{marginRight: '.5rem'}}>Email</label>
+            <input type="email" id="email" name="email" value={email} onChange={handleChange} style={{marginLeft: '.5rem'}} required />
           </div>
-          <div className="form-group">
-            <label htmlFor="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              value={message}
-              onChange={handleChange}
-              required
-            ></textarea>
+          <div className="form-group" style={{ marginBottom: '1rem' }}>
+            <label htmlFor="message" style={{ verticalAlign: 'middle' }}>Message</label>
+            <textarea id="message" name="message" value={message} onChange={handleChange} style={{ verticalAlign: 'middle', marginLeft: '.5rem' }} required></textarea>
           </div>
-          <div className="form-group">
+          <div className="form-group" style={{ display: 'flex', justifyContent: 'center', marginTop: '1rem' }}>
             <Button type="submit" variant="contained" color="primary">
               Submit
             </Button>
           </div>
         </form>
       </div>
-      <div className="contact-info">
+      <div className="contact-info" style={{ textAlign: 'center', width: '100%', maxWidth: '500px' }}>
         <p>Feel free to contact me at:</p>
-        <ul>
-          <li>Email: nathaniel@example.com</li>
-          <li>Phone: (123) 456-7890</li>
-        </ul>
+        
+          <p>Email: nathaniel@example.com</p>
+          <p>Phone: (123) 456-7890</p>
+        
       </div>
     </section>
   );
 }
 
 export default Contact;
-
-
