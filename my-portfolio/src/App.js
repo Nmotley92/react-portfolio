@@ -30,9 +30,12 @@ function App() {
       <div className="App">
         <Header activePage={activePage} handleNavClick={handleNavClick} />
         {content}
-        <Footer />
+        <div className="footer">
+          <Footer />
+        </div>
       </div>
     </ThemeProviderComponent>
+    
   );
 }
 
