@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTheme } from '@material-ui/core/styles';
-import githubLogo from '../Assets/GitHub-Logo.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 function Project({ project }) {
   const theme = useTheme();
@@ -34,6 +35,17 @@ function Project({ project }) {
     transition: 'opacity 0.3s',
   };
 
+  const titleStyle = {
+    color: 'white',
+    textDecoration: 'none',
+    fontSize: '1.5em',
+  };
+
+  const iconStyle = {
+    color: '#F18F01',
+    fontSize: '2em',
+  };
+
   return (
     <div
       className="project"
@@ -42,15 +54,14 @@ function Project({ project }) {
       onMouseLeave={(e) => (e.currentTarget.lastChild.style.opacity = 0)}
     >
       <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-        <img src={project.image} alt={project.title} style={{ width: '100%', height: '100%'}} />
+        <img src={project.image} alt={project.title} style={imageStyle} />
       </a>
       <div className="project-info" style={projectInfoStyle}>
-        <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-          <h3 style={{ color: 'white' }}>{project.title}</h3>
+        <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" style={titleStyle}>
+          <h3>{project.title}</h3>
         </a>
-        <p style={{ color: 'white', margin: '0.5rem 0' }}>{project.description}</p>
-        <a href={project.repoUrl} target="_blank" rel="noopener noreferrer">
-          <img src={githubLogo} alt="GitHub" width="32" height="32" />
+        <a href={project.repoUrl} target="_blank" rel="noopener noreferrer" style={iconStyle}>
+          <FontAwesomeIcon icon={faGithub} />
         </a>
       </div>
     </div>
@@ -58,3 +69,5 @@ function Project({ project }) {
 }
 
 export default Project;
+
+

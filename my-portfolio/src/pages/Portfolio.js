@@ -57,7 +57,7 @@ function Portfolio() {
       title: 'Jate',
       image: jate,
       description:
-      'JATE, or Just Another Text Editor, is an installable PWA designed for developers to easily write and edit code. This versatile tool streamlines the coding process, providing a seamless and efficient experience for users.',
+        'JATE, or Just Another Text Editor, is an installable PWA designed for developers to easily write and edit code. This versatile tool streamlines the coding process, providing a seamless and efficient experience for users.',
       liveUrl: 'https://serene-taiga-79475.herokuapp.com/',
       repoUrl: 'https://github.com/Nmotley92/jate',
     },
@@ -68,7 +68,6 @@ function Portfolio() {
     <section
       className={styles.portfolio}
       style={{
-        backgroundColor: `${theme.palette.primary.main}80`,
         color: theme.palette.secondary.main,
         display: 'flex',
         flexDirection: 'column',
@@ -77,13 +76,10 @@ function Portfolio() {
         padding: '2rem',
         width: '75%',
         borderRadius: '1rem',
-        position: 'absolute',
-        top: '50%',
-        left: '50%',
-        transform: 'translate(-50%, -50%)',
+        margin: '0 auto',
       }}
     >
-      <h2>Portfolio</h2>
+
       <div className={styles.projects}>
         {projects.map((project, index) => (
           <Project key={index} project={project} />
@@ -94,6 +90,5 @@ function Portfolio() {
 }
 
 export default Portfolio;
-
 
 

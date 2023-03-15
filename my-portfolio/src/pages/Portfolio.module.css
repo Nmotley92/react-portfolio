@@ -1,19 +1,18 @@
-.portfolio {
-    text-align: center;
-  }
-  
-  .projects {
+.projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 1rem;
-    padding: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    max-width: 1200px; /* Adjust this value if needed */
+    margin: 0 auto;
+    grid-auto-flow: dense;
   }
   
-
   .project {
-    position: relative;
-    overflow: hidden;
+    width: 100%;
   }
+  
+  
   
   .project-link {
     display: block;
