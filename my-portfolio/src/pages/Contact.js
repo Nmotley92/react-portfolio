@@ -89,8 +89,8 @@ function Contact() {
       <div className="contact-info" style={{ textAlign: 'center', width: '100%', maxWidth: '500px' }}>
         <p>Feel free to contact me at:</p>
         
-          <p>Email: nathaniel@example.com</p>
-          <p>Phone: (123) 456-7890</p>
+          <p>Email: nmotley92@gmail.com</p>
+          <p>Phone: ((217-494-6761))</p>
         
       </div>
     </section>

@@ -7,10 +7,10 @@ function Footer() {
   return (
     <footer style={{ color: theme.palette.primary.contrastText, zIndex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
       <div className="social-links" style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center', width: '40%', fontSize: '2em' }}>
-        <a href="https://github.com/nathanielmotley" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/Nmotley92" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-github" style= {{color: 'whitesmoke'}}></i>
         </a>
-        <a href="https://www.linkedin.com/in/nathanielmotley/" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/nathaniel-motley-384bb3251/" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-linkedin" style= {{color: 'whitesmoke'}}></i>
         </a>
         <a href="https://twitter.com/nathanielmotley" target="_blank" rel="noopener noreferrer">
