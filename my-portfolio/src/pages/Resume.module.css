@@ -25,6 +25,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 5px;
   }
+  @media (max-width: 768px) {
+    .logoStyle {
+      width: 70px;
+      height: 70px;
+    }
+  }
+  
   
   

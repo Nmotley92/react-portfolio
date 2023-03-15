@@ -1,12 +1,21 @@
-.projects {
+.portfolio {
+    position: relative;
+    padding: 2rem;
+  }
+  
+  .projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 2rem;
     justify-content: center;
-    max-width: 1200px; /* Adjust this value if needed */
-    margin: 0 auto;
-    grid-auto-flow: dense;
   }
+  
+  @media (max-width: 940px) {
+    .projects {
+      grid-template-columns: 1fr;
+    }
+  }
+  
   
   .project {
     width: 100%;

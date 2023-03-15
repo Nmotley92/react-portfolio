@@ -1,30 +1,103 @@
-import React from 'react';
-import { useTheme } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
+import React, { useState } from 'react';
+import { useTheme, makeStyles } from '@material-ui/core/styles';
+import { AppBar, Toolbar, Button, IconButton, Drawer, List, ListItem, ListItemText, Hidden } from '@material-ui/core';
+import MenuIcon from '@material-ui/icons/Menu';
 
-import backgroundImage from '../Assets/headergreen.jpg';
+const useStyles = makeStyles((theme) => ({
+  h1: {
+    flexGrow: 1,
+    color: 'whitesmoke',
+    fontSize: '4rem',
+    margin: 0,
+    [theme.breakpoints.down('md')]: {
+      fontSize: '3rem',
+    },
+  },
+  button: {
+    fontSize: '1.5rem',
+    marginRight: '1rem',
+    marginBottom: '0', // Add this line
+    [theme.breakpoints.down('md')]: {
+      fontSize: '1.2rem',
+      marginRight: '0.5rem',
+      marginBottom: '10px', // Add this line
+    },
+  },
+}));
+
 
 function Header({ activePage, handleNavClick }) {
   const theme = useTheme();
+  const classes = useStyles();
+  const [drawerOpen, setDrawerOpen] = useState(false);
+
+  const handleDrawerToggle = () => {
+    setDrawerOpen(!drawerOpen);
+  };
+
+  const handleDrawerItemClick = (page) => {
+    handleNavClick(page);
+    setDrawerOpen(false);
+  };
+
+  const navButtons = [
+    { label: 'About Me', page: 'About' },
+    { label: 'Portfolio', page: 'Portfolio' },
+    { label: 'Contact Me', page: 'Contact' },
+    { label: 'Resume', page: 'Resume' },
+  ];
 
   return (
-    <header style={{ 
-      backgroundImage: `url(${backgroundImage})`,
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      display: 'flex', 
-      alignItems: 'center', 
-      justifyContent: 'space-between', 
-      height: '8rem' }}>
-      <h1 style={{ color: 'theme.palette.primary.main', fontSize: '4rem', margin: '0 0 0 6rem' }}>Nathaniel Motley</h1>
+    <>
+      <AppBar position="static" color="transparent">
+        <Toolbar>
+          <h1 className={classes.h1}>Nathaniel Motley</h1>
 
-      <nav>
-        <Button variant="contained" color={activePage === 'About' ? 'secondary' : 'primary'} onClick={() => handleNavClick('About')} style={{ fontSize: '1.5rem', marginRight: '4rem', backgroundColor: activePage !== 'About' ? theme.palette.success.main : '', boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)' }}>About Me</Button>
-        <Button variant="contained" color={activePage === 'Portfolio' ? 'secondary' : 'primary'} onClick={() => handleNavClick('Portfolio')} style={{ fontSize: '1.5rem', marginRight: '4rem', backgroundColor: activePage !== 'Portfolio' ? theme.palette.success.main : '', boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)' }}>Portfolio</Button>
-        <Button variant="contained" color={activePage === 'Contact' ? 'secondary' : 'primary'} onClick={() => handleNavClick('Contact')} style={{ fontSize: '1.5rem', marginRight: '4rem', backgroundColor: activePage !== 'Contact' ? theme.palette.success.main : '', boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)' }}>Contact Me</Button>
-        <Button variant="contained" color={activePage === 'Resume' ? 'secondary' : 'primary'} onClick={() => handleNavClick('Resume')} style={{ fontSize: '1.5rem', marginRight: '6rem', backgroundColor: activePage !== 'Resume' ? theme.palette.success.main : '', boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)' }}>Resume</Button>
-      </nav>
-    </header>
+          <Hidden xsDown>
+            <div>
+              {navButtons.map((navButton) => (
+                <Button
+                  key={navButton.page}
+                  variant="contained"
+                  color={activePage === navButton.page ? 'secondary' : 'primary'}
+                  onClick={() => handleNavClick(navButton.page)}
+                  style={{
+                    backgroundColor: activePage !== navButton.page ? theme.palette.success.main : '',
+                    boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)',
+                  }}
+                  className={classes.button}
+                >
+                  {navButton.label}
+                </Button>
+              ))}
+            </div>
+          </Hidden>
+          <Hidden smUp>
+            <IconButton
+              edge="end"
+              color="inherit"
+              aria-label="menu"
+              onClick={handleDrawerToggle}
+            >
+              <MenuIcon />
+            </IconButton>
+          </Hidden>
+        </Toolbar>
+      </AppBar>
+      <Drawer anchor="right" open={drawerOpen} onClose={handleDrawerToggle}>
+        <List>
+          {navButtons.map((navButton) => (
+            <ListItem
+              button
+              key={navButton.page}
+              onClick={() => handleDrawerItemClick(navButton.page)}
+            >
+              <ListItemText primary={navButton.label} />
+            </ListItem>
+          ))}
+        </List>
+      </Drawer>
+    </>
   );
 }
 
