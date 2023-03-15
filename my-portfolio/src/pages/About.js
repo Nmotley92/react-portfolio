@@ -8,7 +8,7 @@ function About() {
   return (
     <section
       style={{
-        backgroundColor: `${theme.palette.primary.main}80`,
+        backgroundColor: `${theme.palette.primary.main}`,
         color: theme.palette.secondary.main,
         display: 'flex',
         flexDirection: 'column',
@@ -30,10 +30,10 @@ function About() {
         style={{ width: '150px', height: '150px', borderRadius: '50%' }}
       />
       <p style={{ textAlign: 'center' }}>
-        Hi, I'm Nathaniel Motley! I'm a web developer based in the United States. I have experience building web applications using a variety of technologies, including React, Node.js, and MongoDB.
+        Hi, I'm Nathaniel Motley, a dedicated and resourceful web developer based in the United States. I specialize in building web applications using a wide array of technologies, including React, Node.js, and MongoDB. Recently, I completed an intensive 24-week Full Stack Development bootcamp, earning my certificate and further honing my technical skills.
       </p>
       <p style={{ textAlign: 'center' }}>
-        In my free time, I enjoy hiking, reading, and playing video games.
+        As a driven professional, I excel in both individual and collaborative settings. My strong problem-solving abilities and adaptability make me an invaluable asset to any project or team. In my leisure time, I enjoy pursuing various interests such as hiking, reading, playing video games, and exploring the culinary arts—particularly the art of smoking meat.
       </p>
     </section>
   );

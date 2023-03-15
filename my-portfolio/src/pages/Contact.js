@@ -35,7 +35,7 @@ function Contact() {
   return (
     <section
       style={{
-        backgroundColor: `${theme.palette.primary.main}80`,
+        backgroundColor: `${theme.palette.primary.main}`,
         color: theme.palette.secondary.main,
         padding: '2rem',
         borderRadius: '10px',
@@ -80,7 +80,7 @@ function Contact() {
             <textarea id="message" name="message" value={message} onChange={handleChange} style={{ verticalAlign: 'middle', marginLeft: '.5rem' }} required></textarea>
           </div>
           <div className="form-group" style={{ display: 'flex', justifyContent: 'center', marginTop: '1rem' }}>
-            <Button type="submit" variant="contained" color="primary">
+            <Button type="submit" variant="contained" color="secondary" style={{ color: 'whitesmoke' }}>
               Submit
             </Button>
           </div>
