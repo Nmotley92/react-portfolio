@@ -16,7 +16,7 @@ function Header({ activePage, handleNavClick }) {
       alignItems: 'center', 
       justifyContent: 'space-between', 
       height: '8rem' }}>
-      <h1 style={{ color: theme.palette.primary.main, fontSize: '4rem', margin: '0 0 0 6rem' }}>Nathaniel Motley</h1>
+      <h1 style={{ color: 'theme.palette.primary.main', fontSize: '4rem', margin: '0 0 0 6rem' }}>Nathaniel Motley</h1>
 
       <nav>
         <Button variant="contained" color={activePage === 'About' ? 'secondary' : 'primary'} onClick={() => handleNavClick('About')} style={{ fontSize: '1.5rem', marginRight: '4rem', backgroundColor: activePage !== 'About' ? theme.palette.success.main : '', boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)' }}>About Me</Button>

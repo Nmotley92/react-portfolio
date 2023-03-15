@@ -1,0 +1,71 @@
+.portfolio {
+    text-align: center;
+  }
+  
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+    padding: 2rem;
+  }
+  
+
+  .project {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .project-link {
+    display: block;
+  }
+  
+  .project-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .project-title,
+  .project-description {
+    color: #fff;
+    margin: 0.5rem 0;
+  }
+  
+  .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .github-logo {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+  }
+  
+  .project:hover .project-image {
+    transform: scale(1.1);
+  }
+  
+  .project:hover .overlay {
+    opacity: 1;
+  }
+   
+  
+  
