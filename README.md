@@ -26,7 +26,7 @@
 </p>
 
 ## About
-This is my portfolio that showcases my skills and projects. It is built with react and is deployed on heroku. It also uses react hooks to manage state. It is also responsive and works on mobile devices.
+This is my portfolio that showcases my skills and projects. It also uses react hooks to manage state. It is also responsive and works on mobile devices.
 
 ## Visuals
 
