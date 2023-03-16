@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.f609bc54.css",
+    "main.css": "/react-portfolio/static/css/main.34a0f28b.css",
     "main.js": "/react-portfolio/static/js/main.05a2a192.js",
     "static/media/Longevity-project.png": "/react-portfolio/static/media/Longevity-project.65798eb13ab1e6ac3181.png",
     "static/media/propic.jpg": "/react-portfolio/static/media/propic.4ba656265215b044cfdb.jpg",
@@ -40,11 +40,11 @@
     "static/media/HTML.svg": "/react-portfolio/static/media/HTML.8c11e1a8364b520a311ac9bf8b5d2fbf.svg",
     "index.html": "/react-portfolio/index.html",
     "static/media/css3.svg": "/react-portfolio/static/media/css3.1323e04024709c8a25e60cd9db22db48.svg",
-    "main.f609bc54.css.map": "/react-portfolio/static/css/main.f609bc54.css.map",
+    "main.34a0f28b.css.map": "/react-portfolio/static/css/main.34a0f28b.css.map",
     "main.05a2a192.js.map": "/react-portfolio/static/js/main.05a2a192.js.map"
   },
   "entrypoints": [
-    "static/css/main.f609bc54.css",
+    "static/css/main.34a0f28b.css",
     "static/js/main.05a2a192.js"
   ]
 }
