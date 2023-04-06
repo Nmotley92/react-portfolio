@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.34a0f28b.css",
-    "main.js": "/react-portfolio/static/js/main.bccd6b5d.js",
+    "main.js": "/react-portfolio/static/js/main.6e701d1f.js",
     "static/media/BookHaven.png": "/react-portfolio/static/media/BookHaven.cc593f8e5da03255ab23.png",
     "static/media/Longevity-project.png": "/react-portfolio/static/media/Longevity-project.65798eb13ab1e6ac3181.png",
     "static/media/fa-solid-900.ttf": "/react-portfolio/static/media/fa-solid-900.2877d54f94f30c5d563c.ttf",
@@ -41,10 +41,10 @@
     "index.html": "/react-portfolio/index.html",
     "static/media/css3.svg": "/react-portfolio/static/media/css3.1323e04024709c8a25e60cd9db22db48.svg",
     "main.34a0f28b.css.map": "/react-portfolio/static/css/main.34a0f28b.css.map",
-    "main.bccd6b5d.js.map": "/react-portfolio/static/js/main.bccd6b5d.js.map"
+    "main.6e701d1f.js.map": "/react-portfolio/static/js/main.6e701d1f.js.map"
   },
   "entrypoints": [
     "static/css/main.34a0f28b.css",
-    "static/js/main.bccd6b5d.js"
+    "static/js/main.6e701d1f.js"
   ]
 }
