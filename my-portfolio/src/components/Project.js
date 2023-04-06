@@ -47,6 +47,7 @@ function Project({ project }) {
   };
 
   return (
+<> <div>
     <div
       className="project"
       style={projectWrapperStyle}
@@ -61,10 +62,25 @@ function Project({ project }) {
           <h3>{project.title}</h3>
         </a>
         <a href={project.repoUrl} target="_blank" rel="noopener noreferrer" style={iconStyle}>
+          
           <FontAwesomeIcon icon={faGithub} />
         </a>
       </div>
     </div>
+    <p style={{
+        backgroundColor: `${theme.palette.primary.main}`,
+        color: theme.palette.secondary.main,
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: '2rem',
+        borderRadius: '1rem', // Added rounded corners
+
+      }}>{project.description}</p>
+    </div>
+    </>
+    
   );
 }
 

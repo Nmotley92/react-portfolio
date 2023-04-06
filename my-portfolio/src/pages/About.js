@@ -27,7 +27,7 @@ function About() {
       <img
         src={profile}
         alt="Nathaniel Motley"
-        style={{ width: '150px', height: '150px', borderRadius: '50%' }}
+        style={{ width: '170px', height: '150px', borderRadius: '50%', objectFit: 'contain' }}
       />
       <p style={{ textAlign: 'center' }}>
         Hi, I'm Nathaniel Motley, a dedicated and resourceful web developer based in the United States. I specialize in building web applications using a wide array of technologies, including React, Node.js, and MongoDB. Recently, I completed an intensive 24-week Full Stack Development bootcamp, earning my certificate and further honing my technical skills.
