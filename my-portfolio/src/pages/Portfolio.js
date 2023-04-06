@@ -7,7 +7,7 @@ import dailyplaner from '../Assets/Daily-planner-project.png';
 import weatherdashboard from '../Assets/Weather-Dashboard-project.png';
 import coderscorner from '../Assets/Codres-corner-project.png';
 import notetaker from '../Assets/note-taker-project.png';
-import jate from '../Assets/Jate-project.png';
+import BookHaven from '../Assets/BookHaven.png';
 
 
 function Portfolio() {
@@ -21,6 +21,14 @@ function Portfolio() {
         'A comprehensive full-stack fitness app that enables users to create personalized profiles, design workout plans, and discover new exercises with detailed instructions. The app supports users on their health journey by simplifying goal achievement, offering tailored plans, and providing easy access to exercise guidance.',
       liveUrl: 'https://rocky-thicket-55053.herokuapp.com/',
       repoUrl: 'https://github.com/alexisbenavidez99/workout-tracker',
+    },    
+    {
+      title: 'BookHaven',
+      image: BookHaven,
+      description:
+        'BookHaven is a full-stack MERN app that allows users to search for books, save them to a personal library, and leave reviews. The app is powered by React, MongoDB, and Express.js, and utilizes the Google Books API and JWT authentication',
+      liveUrl: 'https://book-haven.herokuapp.com/',
+      repoUrl: 'https://github.com/Nmotley92/e-commerce-site',
     },
     {
       title: 'Daily Planner',
@@ -54,14 +62,7 @@ function Portfolio() {
       liveUrl: ' https://thawing-citadel-61560.herokuapp.com/notes',
       repoUrl: 'https://github.com/Nmotley92/note-taker',
     },
-    {
-      title: 'Jate',
-      image: jate,
-      description:
-        'JATE, or Just Another Text Editor, is an installable PWA designed for developers to easily write and edit code. This versatile tool streamlines the coding process, providing a seamless and efficient experience for users.',
-      liveUrl: 'https://serene-taiga-79475.herokuapp.com/',
-      repoUrl: 'https://github.com/Nmotley92/jate',
-    },
+
 
   ];
 
