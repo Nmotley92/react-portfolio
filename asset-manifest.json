@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.34a0f28b.css",
-    "main.js": "/react-portfolio/static/js/main.6e701d1f.js",
+    "main.css": "/react-portfolio/static/css/main.822c9672.css",
+    "main.js": "/react-portfolio/static/js/main.7b986d75.js",
     "static/media/BookHaven.png": "/react-portfolio/static/media/BookHaven.cc593f8e5da03255ab23.png",
     "static/media/Longevity-project.png": "/react-portfolio/static/media/Longevity-project.65798eb13ab1e6ac3181.png",
     "static/media/fa-solid-900.ttf": "/react-portfolio/static/media/fa-solid-900.2877d54f94f30c5d563c.ttf",
@@ -40,11 +40,11 @@
     "static/media/HTML.svg": "/react-portfolio/static/media/HTML.8c11e1a8364b520a311ac9bf8b5d2fbf.svg",
     "index.html": "/react-portfolio/index.html",
     "static/media/css3.svg": "/react-portfolio/static/media/css3.1323e04024709c8a25e60cd9db22db48.svg",
-    "main.34a0f28b.css.map": "/react-portfolio/static/css/main.34a0f28b.css.map",
-    "main.6e701d1f.js.map": "/react-portfolio/static/js/main.6e701d1f.js.map"
+    "main.822c9672.css.map": "/react-portfolio/static/css/main.822c9672.css.map",
+    "main.7b986d75.js.map": "/react-portfolio/static/js/main.7b986d75.js.map"
   },
   "entrypoints": [
-    "static/css/main.34a0f28b.css",
-    "static/js/main.6e701d1f.js"
+    "static/css/main.822c9672.css",
+    "static/js/main.7b986d75.js"
   ]
 }
